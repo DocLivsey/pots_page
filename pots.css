@@ -1,0 +1,89 @@
+/*общие стили для бесклассовых элементов*/
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: radial-gradient(blue, blueviolet) repeat-x fixed 100%;*/
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+address{
+    border-radius: 8px;
+    background: rgba(210, 105, 30, 0.4);
+    font-feature-settings: "ccmp";
+}
+header{
+    background-color: bisque;
+}
+aside{
+    background-color: sandybrown;
+    border-radius: 8px;
+}
+h2{
+    background-color: chocolate;
+    border-radius: 8px;
+}
+/*стили для классовых элементов*/
+.content{
+    align-items: center;
+    width: 100%;
+}
+.nav-href{
+    background-color: sandybrown;
+}
+.text{
+    background-color: bisque;
+    border-radius: 8px;
+}
+/*стили для элеменотов под компьютеры*/
+@media screen and (min-width: 760px) {
+    /*общие стили для бесклассовых элементов*/
+    body{
+        background: url(./pots_img/1663779039229.jpg) repeat-x fixed;
+        background-size: 100%;
+    }
+    address{
+        order: 0;
+        margin: 0%;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        font-size: 100%;
+        text-align: center;
+    }
+    h2{
+        width: 20%;
+    }
+    /*стили для классовых элементов*/
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .pots-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1%;
+    }
+    .middle-content{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 90%;
+    }
+    .nav-href{
+        margin: 1%;
+    }
+}
